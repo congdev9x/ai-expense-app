@@ -41,3 +41,24 @@ flutter run -d web-server --web-port 8080
 > **Lưu ý:** Tương tự backend, hãy giữ cửa sổ Terminal này luôn mở.
 
 🎉 Chúc mừng! Giờ hãy mở trình duyệt lên và vào địa chỉ **`http://localhost:8080`** để sử dụng ứng dụng!
+
+## 🛠️ Hướng Dẫn Build Ứng Dụng (Build App)
+
+Để chạy ứng dụng trên điện thoại Android thật, bạn cần thực hiện build file APK theo các bước sau:
+
+### Bước 1: Cấu hình IP Backend
+Mở file `frontend/lib/core/api/api_config.dart` và cập nhật `baseUrl` sang địa chỉ IP LAN của máy tính chạy Backend (ví dụ: `192.168.2.163` thay vì `127.0.0.1`).
+> **Lưu ý:** Cả điện thoại và máy tính phải kết nối chung một mạng WiFi.
+
+### Bước 2: Thực hiện Build APK
+Mở terminal tại thư mục `frontend` và chạy lệnh:
+```bash
+flutter build apk --release
+```
+File APK sau khi build xong sẽ nằm tại đường dẫn:  
+`frontend/build/app/outputs/flutter-apk/app-release.apk`
+
+### Bước 3: Cài đặt & Sử dụng
+- Copy file `app-release.apk` sang điện thoại Android.
+- Mở file trên điện thoại và tiến hành cài đặt.
+- Đảm bảo Backend (Docker & FastAPI) đang chạy trên máy tính trước khi mở App trên điện thoại.
