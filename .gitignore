@@ -10,21 +10,21 @@
 *.class
 *.log
 
-# Python (Backend)
-backend/__pycache__/
-backend/*.py[cod]
-backend/*$py.class
-backend/.pytest_cache/
-backend/.venv/
-backend/env/
-backend/venv/
-backend/ENV/
-backend/build/
-backend/dist/
-backend/*.egg-info/
-backend/.mypy_cache/
-backend/.coverage
-backend/htmlcov/
+# Python (Common)
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.venv/
+env/
+venv/
+ENV/
+build/
+dist/
+*.egg-info/
+.mypy_cache/
+.coverage
+htmlcov/
 
 # Flutter (Frontend)
 frontend/.dart_tool/
