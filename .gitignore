@@ -1,0 +1,62 @@
+# IDE and Editor
+.idea/
+.vscode/
+*.iml
+*.iws
+*.ipr
+.DS_Store
+.history/
+*.swp
+*.class
+*.log
+
+# Python (Backend)
+backend/__pycache__/
+backend/*.py[cod]
+backend/*$py.class
+backend/.pytest_cache/
+backend/.venv/
+backend/env/
+backend/venv/
+backend/ENV/
+backend/build/
+backend/dist/
+backend/*.egg-info/
+backend/.mypy_cache/
+backend/.coverage
+backend/htmlcov/
+
+# Flutter (Frontend)
+frontend/.dart_tool/
+frontend/.flutter-plugins
+frontend/.flutter-plugins-dependencies
+frontend/.pub-cache/
+frontend/.pub/
+frontend/build/
+frontend/ios/Flutter/.last_build_id
+frontend/android/app/debug/
+frontend/android/app/profile/
+frontend/android/app/release/
+frontend/app.*.symbols
+frontend/app.*.map.json
+
+# Environment Variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.env
+
+# Docker & Persistence
+docker-data/
+pgdata/
+esdata/
+redisdata/
+
+# OS specific files
+Thumbs.db
+db.lock
+.directory
+.picasa.ini
+ehthumbs.db
